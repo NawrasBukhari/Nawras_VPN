@@ -33,7 +33,22 @@ namespace Simple_VPN.Properties {
         internal Resources() {
         }
 
-        public static Image Connected_Fire { get; internal set;}
+        public static Image Connected_Fire 
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap _8
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
@@ -86,12 +101,7 @@ namespace Simple_VPN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _8 {
-            get {
-                object obj = ResourceManager.GetObject("8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -168,7 +178,7 @@ namespace Simple_VPN.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Disconnectpic {
             get {
-                object obj = ResourceManager.GetObject("Disconnectpic", resourceCulture);
+                object obj = ResourceManager.GetObject("8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
