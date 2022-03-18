@@ -239,5 +239,22 @@ namespace Simple_VPN
         {
 
         }
+
+        [Obsolete]
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch(comboBox2.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru-RU");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
+        }
     }
 }
