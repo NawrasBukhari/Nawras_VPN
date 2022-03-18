@@ -68,9 +68,10 @@ namespace Simple_VPN
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.ExitBtn.Location = new System.Drawing.Point(304, 3);
+            this.ExitBtn.Location = new System.Drawing.Point(405, 4);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(25, 26);
+            this.ExitBtn.Size = new System.Drawing.Size(33, 32);
             this.ExitBtn.TabIndex = 0;
             this.ExitBtn.Text = "X";
             this.ExitBtn.UseVisualStyleBackColor = true;
@@ -82,9 +83,10 @@ namespace Simple_VPN
             this.MiniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MiniBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MiniBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.MiniBtn.Location = new System.Drawing.Point(276, 3);
+            this.MiniBtn.Location = new System.Drawing.Point(368, 4);
+            this.MiniBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MiniBtn.Name = "MiniBtn";
-            this.MiniBtn.Size = new System.Drawing.Size(25, 26);
+            this.MiniBtn.Size = new System.Drawing.Size(33, 32);
             this.MiniBtn.TabIndex = 1;
             this.MiniBtn.Text = "_";
             this.MiniBtn.UseVisualStyleBackColor = true;
@@ -93,9 +95,10 @@ namespace Simple_VPN
             // SeprLbl
             // 
             this.SeprLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.SeprLbl.Location = new System.Drawing.Point(3, 35);
+            this.SeprLbl.Location = new System.Drawing.Point(4, 43);
+            this.SeprLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeprLbl.Name = "SeprLbl";
-            this.SeprLbl.Size = new System.Drawing.Size(326, 1);
+            this.SeprLbl.Size = new System.Drawing.Size(435, 1);
             this.SeprLbl.TabIndex = 2;
             // 
             // NameLbl
@@ -103,9 +106,10 @@ namespace Simple_VPN
             this.NameLbl.AutoSize = true;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(176)))));
-            this.NameLbl.Location = new System.Drawing.Point(0, 8);
+            this.NameLbl.Location = new System.Drawing.Point(0, 10);
+            this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
-            this.NameLbl.Size = new System.Drawing.Size(105, 18);
+            this.NameLbl.Size = new System.Drawing.Size(138, 23);
             this.NameLbl.TabIndex = 3;
             this.NameLbl.Text = "UlTIMATE VPN";
             // 
@@ -120,7 +124,7 @@ namespace Simple_VPN
             this.CountriesCmBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.CountriesCmBox.FormattingEnabled = true;
             this.CountriesCmBox.IntegralHeight = false;
-            this.CountriesCmBox.ItemHeight = 23;
+            this.CountriesCmBox.ItemHeight = 30;
             this.CountriesCmBox.Items.AddRange(new object[] {
             "Select",
             "Argentina",
@@ -133,18 +137,20 @@ namespace Simple_VPN
             "Netherlands",
             "United Arab Emirate",
             "United States"});
-            this.CountriesCmBox.Location = new System.Drawing.Point(12, 285);
+            this.CountriesCmBox.Location = new System.Drawing.Point(16, 351);
+            this.CountriesCmBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CountriesCmBox.Name = "CountriesCmBox";
-            this.CountriesCmBox.Size = new System.Drawing.Size(269, 31);
+            this.CountriesCmBox.Size = new System.Drawing.Size(357, 38);
             this.CountriesCmBox.TabIndex = 4;
             this.CountriesCmBox.SelectedIndexChanged += new System.EventHandler(this.CountriesCmBox_SelectedIndexChanged);
             // 
             // CountriesFlgPicBox
             // 
             this.CountriesFlgPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(28)))), ((int)(((byte)(117)))));
-            this.CountriesFlgPicBox.Location = new System.Drawing.Point(286, 285);
+            this.CountriesFlgPicBox.Location = new System.Drawing.Point(381, 351);
+            this.CountriesFlgPicBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CountriesFlgPicBox.Name = "CountriesFlgPicBox";
-            this.CountriesFlgPicBox.Size = new System.Drawing.Size(34, 31);
+            this.CountriesFlgPicBox.Size = new System.Drawing.Size(45, 38);
             this.CountriesFlgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CountriesFlgPicBox.TabIndex = 5;
             this.CountriesFlgPicBox.TabStop = false;
@@ -156,9 +162,10 @@ namespace Simple_VPN
             this.ConnectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConnectBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.ConnectBtn.Location = new System.Drawing.Point(12, 324);
+            this.ConnectBtn.Location = new System.Drawing.Point(16, 399);
+            this.ConnectBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConnectBtn.Name = "ConnectBtn";
-            this.ConnectBtn.Size = new System.Drawing.Size(155, 43);
+            this.ConnectBtn.Size = new System.Drawing.Size(207, 53);
             this.ConnectBtn.TabIndex = 6;
             this.ConnectBtn.Text = "Connect";
             this.ConnectBtn.UseVisualStyleBackColor = true;
@@ -170,9 +177,10 @@ namespace Simple_VPN
             this.DisconnectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DisconnectBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisconnectBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.DisconnectBtn.Location = new System.Drawing.Point(170, 324);
+            this.DisconnectBtn.Location = new System.Drawing.Point(227, 399);
+            this.DisconnectBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DisconnectBtn.Name = "DisconnectBtn";
-            this.DisconnectBtn.Size = new System.Drawing.Size(150, 43);
+            this.DisconnectBtn.Size = new System.Drawing.Size(200, 53);
             this.DisconnectBtn.TabIndex = 7;
             this.DisconnectBtn.Text = "Disconnect";
             this.DisconnectBtn.UseVisualStyleBackColor = true;
@@ -190,14 +198,14 @@ namespace Simple_VPN
             // openApplicationToolStripMenuItem
             // 
             this.openApplicationToolStripMenuItem.Name = "openApplicationToolStripMenuItem";
-            this.openApplicationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.openApplicationToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.openApplicationToolStripMenuItem.Text = "Open Application";
             this.openApplicationToolStripMenuItem.Click += new System.EventHandler(this.openApplicationToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(195, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -208,7 +216,7 @@ namespace Simple_VPN
             this.openApplicationToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.CMenu.Name = "CMenu";
-            this.CMenu.Size = new System.Drawing.Size(168, 48);
+            this.CMenu.Size = new System.Drawing.Size(196, 52);
             // 
             // InfoBtn
             // 
@@ -216,9 +224,10 @@ namespace Simple_VPN
             this.InfoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InfoBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.InfoBtn.Location = new System.Drawing.Point(248, 3);
+            this.InfoBtn.Location = new System.Drawing.Point(331, 4);
+            this.InfoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InfoBtn.Name = "InfoBtn";
-            this.InfoBtn.Size = new System.Drawing.Size(25, 26);
+            this.InfoBtn.Size = new System.Drawing.Size(33, 32);
             this.InfoBtn.TabIndex = 12;
             this.InfoBtn.Text = "?";
             this.InfoBtn.UseVisualStyleBackColor = true;
@@ -230,9 +239,10 @@ namespace Simple_VPN
             this.PPTP_rBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PPTP_rBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PPTP_rBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.PPTP_rBtn.Location = new System.Drawing.Point(41, 13);
+            this.PPTP_rBtn.Location = new System.Drawing.Point(55, 16);
+            this.PPTP_rBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PPTP_rBtn.Name = "PPTP_rBtn";
-            this.PPTP_rBtn.Size = new System.Drawing.Size(71, 27);
+            this.PPTP_rBtn.Size = new System.Drawing.Size(86, 34);
             this.PPTP_rBtn.TabIndex = 13;
             this.PPTP_rBtn.Text = "PPTP";
             this.PPTP_rBtn.UseVisualStyleBackColor = true;
@@ -246,9 +256,11 @@ namespace Simple_VPN
             this.ProtocolGrpBox.Controls.Add(this.PPTP_rBtn);
             this.ProtocolGrpBox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProtocolGrpBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.ProtocolGrpBox.Location = new System.Drawing.Point(12, 233);
+            this.ProtocolGrpBox.Location = new System.Drawing.Point(16, 287);
+            this.ProtocolGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProtocolGrpBox.Name = "ProtocolGrpBox";
-            this.ProtocolGrpBox.Size = new System.Drawing.Size(308, 46);
+            this.ProtocolGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProtocolGrpBox.Size = new System.Drawing.Size(411, 57);
             this.ProtocolGrpBox.TabIndex = 14;
             this.ProtocolGrpBox.TabStop = false;
             this.ProtocolGrpBox.Text = "Protocol";
@@ -257,9 +269,10 @@ namespace Simple_VPN
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(251, 20);
+            this.label2.Location = new System.Drawing.Point(335, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 14);
+            this.label2.Size = new System.Drawing.Size(45, 18);
             this.label2.TabIndex = 16;
             this.label2.Text = "(safer)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -268,9 +281,10 @@ namespace Simple_VPN
             // 
             this.RecommendedLbl.AutoSize = true;
             this.RecommendedLbl.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RecommendedLbl.Location = new System.Drawing.Point(104, 22);
+            this.RecommendedLbl.Location = new System.Drawing.Point(139, 27);
+            this.RecommendedLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RecommendedLbl.Name = "RecommendedLbl";
-            this.RecommendedLbl.Size = new System.Drawing.Size(42, 14);
+            this.RecommendedLbl.Size = new System.Drawing.Size(50, 18);
             this.RecommendedLbl.TabIndex = 15;
             this.RecommendedLbl.Text = "(faster)";
             // 
@@ -280,9 +294,10 @@ namespace Simple_VPN
             this.L2TP_rBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.L2TP_rBtn.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L2TP_rBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
-            this.L2TP_rBtn.Location = new System.Drawing.Point(188, 13);
+            this.L2TP_rBtn.Location = new System.Drawing.Point(251, 16);
+            this.L2TP_rBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.L2TP_rBtn.Name = "L2TP_rBtn";
-            this.L2TP_rBtn.Size = new System.Drawing.Size(68, 27);
+            this.L2TP_rBtn.Size = new System.Drawing.Size(84, 34);
             this.L2TP_rBtn.TabIndex = 14;
             this.L2TP_rBtn.Text = "L2TP";
             this.L2TP_rBtn.UseVisualStyleBackColor = true;
@@ -294,9 +309,10 @@ namespace Simple_VPN
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(176)))));
-            this.label1.Location = new System.Drawing.Point(74, 389);
+            this.label1.Location = new System.Drawing.Point(99, 479);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 18);
+            this.label1.Size = new System.Drawing.Size(236, 22);
             this.label1.TabIndex = 15;
             this.label1.Text = "Powered by Nawras Bukhari";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -307,17 +323,20 @@ namespace Simple_VPN
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(176)))));
-            this.label3.Location = new System.Drawing.Point(0, 414);
+            this.label3.Location = new System.Drawing.Point(0, 510);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 18);
+            this.label3.Size = new System.Drawing.Size(50, 23);
             this.label3.TabIndex = 16;
             this.label3.Text = "1.0.0";
             // 
             // statusPicbox
             // 
-            this.statusPicbox.Location = new System.Drawing.Point(77, 46);
+            this.statusPicbox.Image = ((System.Drawing.Image)(resources.GetObject("statusPicbox.Image")));
+            this.statusPicbox.Location = new System.Drawing.Point(103, 56);
+            this.statusPicbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.statusPicbox.Name = "statusPicbox";
-            this.statusPicbox.Size = new System.Drawing.Size(181, 181);
+            this.statusPicbox.Size = new System.Drawing.Size(241, 223);
             this.statusPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.statusPicbox.TabIndex = 8;
             this.statusPicbox.TabStop = false;
@@ -325,10 +344,10 @@ namespace Simple_VPN
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(332, 434);
+            this.ClientSize = new System.Drawing.Size(443, 534);
             this.ControlBox = false;
             this.Controls.Add(this.statusPicbox);
             this.Controls.Add(this.label3);
@@ -346,6 +365,7 @@ namespace Simple_VPN
             this.ForeColor = System.Drawing.Color.LightCoral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
