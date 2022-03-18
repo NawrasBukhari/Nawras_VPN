@@ -44,4 +44,10 @@ Install this zip file [file](https://github.com/NawrasBukhari/Nawra_VPN/archive/
 
 ## Quick demo
 
-download this quick [demo](https://github.com/NawrasBukhari/Nawra_VPN/blob/master/Ready_Sample.zip)    
+download this quick [demo](https://github.com/NawrasBukhari/Nawra_VPN/blob/master/Ready_Sample.zip)  
+
+## Changelog
+- [x] Multilingual Support
+- [x] Process speed bug
+- [x] UI Improvements
+- [ ] More features soon 
