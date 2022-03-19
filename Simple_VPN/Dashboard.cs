@@ -26,19 +26,6 @@ namespace Simple_VPN
             DisconnectBtn_Enabled_False();
         }
 
-        /* 
-         * The Below Username & Password Valid Till : April 12, 2022.
-         *
-         *       !!!  Don't Modify ServerIP & selectedProtocol !!!
-         * adapterName : You can choose whatever you like .
-         * 
-         * userName : Your username & passWord : Your password .
-         * preSharedKey : Your PreSharedKey if needed .
-         * 
-         * You can set your serverAddresses in Classes/ServerSelector.cs .
-         * 
-         */
-
         private string serverIP = null;
         private string adapterName = "NawrasVPN";
         private string userName = "nawrasbukhari2018@gmail.com";
@@ -72,7 +59,7 @@ namespace Simple_VPN
                     {
                         if (!PPTP_rBtn.Checked && !L2TP_rBtn.Checked)
                         {
-                            MessageBox.Show("Please Select a Protocol", "Error at 0x59", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Please Select a Protocol", "Error at 0x60", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
@@ -83,7 +70,7 @@ namespace Simple_VPN
                             }
                             catch
                             {
-                                MessageBox.Show("Something went wrong! try within 5 Seconds", "Error at 0x77", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Something went wrong! try within 5 Seconds", "Error at 0x69", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             finally
                             {
