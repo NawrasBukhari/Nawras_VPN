@@ -64,8 +64,8 @@ namespace Simple_VPN
             // 
             // ExitBtn
             // 
-            resources.ApplyResources(this.ExitBtn, "ExitBtn");
             this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ExitBtn, "ExitBtn");
             this.ExitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.UseVisualStyleBackColor = true;
@@ -73,8 +73,8 @@ namespace Simple_VPN
             // 
             // MiniBtn
             // 
-            resources.ApplyResources(this.MiniBtn, "MiniBtn");
             this.MiniBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.MiniBtn, "MiniBtn");
             this.MiniBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.MiniBtn.Name = "MiniBtn";
             this.MiniBtn.UseVisualStyleBackColor = true;
@@ -82,8 +82,8 @@ namespace Simple_VPN
             // 
             // SeprLbl
             // 
-            resources.ApplyResources(this.SeprLbl, "SeprLbl");
             this.SeprLbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.SeprLbl, "SeprLbl");
             this.SeprLbl.Name = "SeprLbl";
             // 
             // NameLbl
@@ -94,11 +94,11 @@ namespace Simple_VPN
             // 
             // CountriesCmBox
             // 
-            resources.ApplyResources(this.CountriesCmBox, "CountriesCmBox");
             this.CountriesCmBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.CountriesCmBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CountriesCmBox.DropDownHeight = 95;
             this.CountriesCmBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CountriesCmBox, "CountriesCmBox");
             this.CountriesCmBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.CountriesCmBox.FormattingEnabled = true;
             this.CountriesCmBox.Items.AddRange(new object[] {
@@ -118,16 +118,16 @@ namespace Simple_VPN
             // 
             // CountriesFlgPicBox
             // 
-            resources.ApplyResources(this.CountriesFlgPicBox, "CountriesFlgPicBox");
             this.CountriesFlgPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(28)))), ((int)(((byte)(117)))));
+            resources.ApplyResources(this.CountriesFlgPicBox, "CountriesFlgPicBox");
             this.CountriesFlgPicBox.Name = "CountriesFlgPicBox";
             this.CountriesFlgPicBox.TabStop = false;
             this.CountriesFlgPicBox.Click += new System.EventHandler(this.CountriesFlgPicBox_Click);
             // 
             // ConnectBtn
             // 
-            resources.ApplyResources(this.ConnectBtn, "ConnectBtn");
             this.ConnectBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ConnectBtn, "ConnectBtn");
             this.ConnectBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.ConnectBtn.Name = "ConnectBtn";
             this.ConnectBtn.UseVisualStyleBackColor = true;
@@ -135,8 +135,8 @@ namespace Simple_VPN
             // 
             // DisconnectBtn
             // 
-            resources.ApplyResources(this.DisconnectBtn, "DisconnectBtn");
             this.DisconnectBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DisconnectBtn, "DisconnectBtn");
             this.DisconnectBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.DisconnectBtn.Name = "DisconnectBtn";
             this.DisconnectBtn.UseVisualStyleBackColor = true;
@@ -150,29 +150,29 @@ namespace Simple_VPN
             // 
             // openApplicationToolStripMenuItem
             // 
-            resources.ApplyResources(this.openApplicationToolStripMenuItem, "openApplicationToolStripMenuItem");
             this.openApplicationToolStripMenuItem.Name = "openApplicationToolStripMenuItem";
+            resources.ApplyResources(this.openApplicationToolStripMenuItem, "openApplicationToolStripMenuItem");
             this.openApplicationToolStripMenuItem.Click += new System.EventHandler(this.openApplicationToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // CMenu
             // 
-            resources.ApplyResources(this.CMenu, "CMenu");
             this.CMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.CMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openApplicationToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.CMenu.Name = "CMenu";
+            resources.ApplyResources(this.CMenu, "CMenu");
             // 
             // InfoBtn
             // 
-            resources.ApplyResources(this.InfoBtn, "InfoBtn");
             this.InfoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.InfoBtn, "InfoBtn");
             this.InfoBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.InfoBtn.Name = "InfoBtn";
             this.InfoBtn.UseVisualStyleBackColor = true;
@@ -189,11 +189,11 @@ namespace Simple_VPN
             // 
             // ProtocolGrpBox
             // 
-            resources.ApplyResources(this.ProtocolGrpBox, "ProtocolGrpBox");
             this.ProtocolGrpBox.Controls.Add(this.label2);
             this.ProtocolGrpBox.Controls.Add(this.RecommendedLbl);
             this.ProtocolGrpBox.Controls.Add(this.L2TP_rBtn);
             this.ProtocolGrpBox.Controls.Add(this.PPTP_rBtn);
+            resources.ApplyResources(this.ProtocolGrpBox, "ProtocolGrpBox");
             this.ProtocolGrpBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(80)))), ((int)(((byte)(181)))));
             this.ProtocolGrpBox.Name = "ProtocolGrpBox";
             this.ProtocolGrpBox.TabStop = false;
@@ -235,10 +235,10 @@ namespace Simple_VPN
             // 
             // comboBox2
             // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(28)))), ((int)(((byte)(117)))));
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.ForeColor = System.Drawing.Color.Beige;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
