@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -53,41 +54,65 @@ namespace Simple_VPN
         [Obsolete]
         private void ConnectBtn_Click(object sender, EventArgs e)
         {
-            if (CountriesCmBox.SelectedIndex == 0)
-            {
-                MessageBox.Show("Please Select a Location", "Error at 0x53", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                if (!PPTP_rBtn.Checked && !L2TP_rBtn.Checked)
+            try {
+                Ping myPing = new Ping();
+                String host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 1000;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+
+                if (reply.Status == IPStatus.Success)
                 {
-                    MessageBox.Show("Please Select a Protocol", "Error at 0x59", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (CountriesCmBox.SelectedIndex == 0)
+                    {
+                        MessageBox.Show("Please Select a Location", "Error at 0x53", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (!PPTP_rBtn.Checked && !L2TP_rBtn.Checked)
+                        {
+                            MessageBox.Show("Please Select a Protocol", "Error at 0x59", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            VPN.setParameters(serverIP, adapterName, userName, passWord, selectedProtocol, preSharedKey);
+                            try
+                            {
+                                VPN.Connect();
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Something went wrong! try within 5 Seconds", "Error at 0x77", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            finally
+                            {
+                                ConnectBtn_Enabled_False();
+                                DisconnectBtn_Enabled_True();
+                                CountriesCmBox_Enabled_False();
+                                statusPicbox.Image = Properties.Resources.Connected_Fire;
+                                GC.Collect();
+                                // For small notification
+                                ConnectMiniSmallBox();
+                                // For background work to be done
+                                Thread.Sleep(8500);
+                                ConnectedSuccesfully();
+                                Goto_Check_IP();
+                            }
+                        }
+                    }
+
                 }
                 else
                 {
-                    VPN.setParameters(serverIP, adapterName, userName, passWord, selectedProtocol, preSharedKey);
-                    try
-                    {
-                        VPN.Connect();
-                    }
-                    catch 
-                    {
-                        VPN.Connect();
-                    }
-                    finally
-                    {
-                        ConnectBtn_Enabled_False();
-                        DisconnectBtn_Enabled_True();
-                        CountriesCmBox_Enabled_False();
-                        statusPicbox.Image = Properties.Resources.Connected_Fire;
-                        GC.Collect();
-                        // For background work to be done
-                        Thread.Sleep(8500);
-                        MessageBox.Show("Successfully Connected", "Nawras VPN", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Goto_Check_IP();   
-                    }
+                    MessageBox.Show("No internet connection was found!", "Error at 0x106", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch {
+                MessageBox.Show("No internet connection was found!", "Error at 0x106", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+
         }
 
         [Obsolete]
@@ -104,7 +129,7 @@ namespace Simple_VPN
                 CountriesCmBox_Enabled_True();
                 statusPicbox.Image = Properties.Resources.Disconnectpic;
                 GC.Collect();
-                MessageBox.Show("Successfully DisConnected", "Nawras VPN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DisconnectedSuccessfully();
             }
         }
 
@@ -178,7 +203,7 @@ namespace Simple_VPN
             while (!Status.IsConnected())
             {
                 DialogResult dResult = MessageBox.Show("You are not Connected to the internet", "No Connection",
-                                                        MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 if (dResult == DialogResult.Cancel)
                 {
                     break;

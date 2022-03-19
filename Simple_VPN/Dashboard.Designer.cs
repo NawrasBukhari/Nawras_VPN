@@ -1,5 +1,7 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Drawing;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace Simple_VPN
@@ -56,6 +58,7 @@ namespace Simple_VPN
             this.label1 = new System.Windows.Forms.Label();
             this.statusPicbox = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CountriesFlgPicBox)).BeginInit();
             this.CMenu.SuspendLayout();
             this.ProtocolGrpBox.SuspendLayout();
@@ -247,6 +250,11 @@ namespace Simple_VPN
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
@@ -367,7 +375,34 @@ namespace Simple_VPN
             CountriesCmBox.ForeColor = Color.FromArgb(244, 80, 176);
             CountriesCmBox.BackColor = Color.FromArgb(22, 27, 33);
         }
+         public void ConnectMiniSmallBox() 
+        {
+            NotifyIcon.Visible = true;
+            NotifyIcon.BalloonTipTitle = "VPN Connection";
+            NotifyIcon.BalloonTipText="Trying To Connect";
+            NotifyIcon.ContextMenuStrip = CMenu;
+            NotifyIcon.ShowBalloonTip(8500);
+        }
 
+       
+
+        public void ConnectedSuccesfully() 
+        {
+            NotifyIcon.Visible = true;
+            NotifyIcon.BalloonTipTitle = "Done!";
+            NotifyIcon.BalloonTipText = "VPN Successfully Connected!";
+            NotifyIcon.ContextMenuStrip = CMenu;
+            NotifyIcon.ShowBalloonTip(3000);
+        }
+
+        public void DisconnectedSuccessfully() 
+        {
+            NotifyIcon.Visible = true;
+            NotifyIcon.BalloonTipTitle = "Done!";
+            NotifyIcon.BalloonTipText = "VPN Successfully Disconnected";
+            NotifyIcon.ContextMenuStrip = CMenu;
+            NotifyIcon.ShowBalloonTip(3000);
+        }
         public string ServerIp(string locationName)
         {
             string IP = null;
@@ -435,5 +470,6 @@ namespace Simple_VPN
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox statusPicbox;
         private ComboBox comboBox2;
+        private NotifyIcon notifyIcon1;
     }
 }
